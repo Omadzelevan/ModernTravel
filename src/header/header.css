@@ -1,0 +1,23 @@
+header {
+  font-family: "Manrope";
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+.ads,
+.ads div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ads {
+  padding: 10px;
+}
+
+.p-bold {
+  font-weight: bold;
+}
