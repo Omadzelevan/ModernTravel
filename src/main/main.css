@@ -1,0 +1,111 @@
+.main {
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.photos img {
+  width: 400px;
+  height: 400px;
+}
+
+.title {
+  max-width: 100%;
+  padding: 22px 18px;
+  border-radius: 18px;
+
+  background: rgba(18, 18, 28, 0.55);
+  border: 1px solid rgba(180, 120, 255, 0.22);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.title h1 {
+  margin: 0 0 12px;
+  line-height: 1.08;
+  font-size: clamp(34px, 4.2vw, 54px);
+  font-weight: 800;
+  letter-spacing: -0.8px;
+
+  color: #ffffff;
+  text-shadow: 0 0 22px rgba(199, 125, 255, 0.18);
+}
+
+.title h1 br {
+  content: "";
+}
+
+.title p {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(245, 245, 255, 0.78);
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 121, 198, 0.35);
+
+  background: rgba(255, 121, 198, 0.12);
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  outline: none;
+
+  box-shadow: 0 0 18px rgba(255, 121, 198, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: rgba(255, 121, 198, 0.2);
+  box-shadow: 0 0 26px rgba(255, 121, 198, 0.35);
+  transform: translateY(-1px);
+}
+
+.hero-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 12px rgba(255, 121, 198, 0.22);
+}
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  max-width: 520px;
+}
+
+.photos img {
+  width: 300px;
+  height: 300px;
+  aspect-ratio: 1 / 1; /* 🔲 კუბიკი */
+  object-fit: cover;
+
+  border-radius: 18px;
+
+  background: rgba(20, 20, 30, 0.6);
+  border: 1px solid rgba(180, 120, 255, 0.35);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+
+  cursor: pointer;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+}
